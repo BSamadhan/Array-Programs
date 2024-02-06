@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+<style>
+	ul {
+		list-style: none;
+		padding: 0;
+		width: 15%;
+		border: 1px solid #000;
+	}
+	ul li{
+		width: 50%;
+		display: inline-block;
+		border-bottom: 1px solid #000;
+	}
+	ul li:nth-child(even){
+		
+		text-align: right;
+	}
+
+</style>
+ 
+</head>
+
+<body>
+    <h3>Coding Questions </h3>
+	<!-- <input type="text" id="email" />
+	<input type="text" id="passwd" />
+	<button class="login">
+	Login 
+	</button> -->
+    <div id="demo"></div>
+    <script>
+		// How to find & return douplicate array 
+		// let names = ["sam","sunny","Deep","sam","sunjay","deep"];
+		// let localval = names.map(name => { 
+		// 	return name.toLowerCase(); 
+		// }) 
+		// let finddouplicate = localval => localval.filter((i,index)=> localval.indexOf(i) !==index); 
+		// let result = finddouplicate(localval); 
+		// console.log(result) 
+		
+		
+		// How to remove douplicate name in string
+		// let names = "Sama,anu,dip,Niky,sama,niky";
+		// let strlower = names.toLowerCase();
+		// let arr = strlower.split(',');
+		// let remove = [...new Set(arr)]
+		// let sortname = remove.sort();
+		// console.log(remove); 
+		
+		// How remove 2nd number array
+		// let names = ['sama','anu','dip','niky','deepu'];
+		// let second = names.splice(1,1);
+		// console.log(second);
+
+
+
+		// How get 2nd larges number
+		//   let arr = [4,10,65,20,30];
+		//   let secondlargenumber = arr.sort((a,b)=>{
+		// 		return b - a;
+		//   })[1];
+		//    console.log(secondlargenumber);
+
+		// How get 2nd larges number using function	
+		// function secounlarge(){
+		// 	let arr = [8,18,65,50,40];
+		// 	let secondlargenumber = arr.sort(function(a,b){return b-a})[1];
+		// 	document.getElementById("demo").innerHTML = secondlargenumber;
+		// }
+		// secounlarge();
+
+		// function bigestarr(arr){
+		// 	let max = -Infinity, result = -Infinity;
+
+		// 	for(const value of arr){
+		// 		let nr = Number(value);
+		// 		if(nr < max){
+		// 			[result, max] = [nr, max];
+		// 		}else if(nr < max && nr > result){
+		// 			result = nr;
+		// 		}
+		// 	}
+		// 	return result;
+		// }
+
+		var arr = ['20','120','111','215','54','78'];
+		console.log(arr)  
+		  
+
+
+		// using setTimeout method 
+		// (function() {
+		// 	console.log(1); 
+		// 	setTimeout(function(){console.log(2)}, 1000); 
+		// 	setTimeout(function(){console.log(3)}, 0); 
+		// 	console.log(4);
+		// })();
+
+		// for(var i = 0; i <5; i++){
+		// 	setTimeout(function(){console.log(i)},1000 + i) // 5 time 5 output
+		// 	setTimeout(function(){console.log(i)}(i), 1000);// 01234
+		// 	//console.log(i)
+		// }
+
+
+		// Delete object property
+		// var person = {
+		// 	firstname: "John",
+		// 	lastname: "Doe",
+		// 	age: 50,
+		// 	eyecolor: "blue"
+		// }
+		// delete person.age
+		// var val = `${person.firstname} ${person.lastname} ${person.age} ${person.eyecolor}`;
+		// document.getElementById("demo").innerHTML = val;
+		
+		// let employees = [
+		// 	{id:1, name: "Samadhan", salary:15000},
+		// 	{id:2, name: "Yog", salary:15000},
+		// 	{id:3, name: "Deeapk", salary:15000},
+		// 	{id:4, name: "Chaitali", salary:15000},
+		// 	{id:5, name: "Pramod", salary:15000}
+		// ]
+
+		// let removeobj = employees.splice(3);
+		// let removeobjresult = employees.filter((item)=> item.id !==removeobj);
+		
+		// let str = "<ul>";
+		// removeobjresult.forEach((i)=>{
+		// 	str += `<li><b>${i.name}</b></li><li>${i.salary}</li>`
+		// })
+		// str += "</ul>";
+		// document.getElementById("demo").innerHTML = str;
+			
+
+
+		
+
+
+
+		
+		
+    </script>
+    
+</body>
+</html>

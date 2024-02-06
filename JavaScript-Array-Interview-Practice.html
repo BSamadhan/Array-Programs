@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+ 
+</head>
+
+<body>
+    <h3>JavaScript-Array-Interview-Practice</h3>
+    <div id="demo"></div>
+    <script>
+		//##Create an Array object.,""
+        //Method 1
+        // var arr = ["Samadhan","Ashok","Behere"];
+        // console.log(arr);
+
+
+        // Method 2
+        // var msgArray = [];
+        // msgArray[0] = "Hello";
+        // msgArray[1] = "Sir",
+        // console.log(msgArray)
+
+
+        // Method 3
+        // var array3 = new Array("This array");
+        // console.log(array3);
+
+
+        // Method 4 
+        // var array4 = Array.of(1,2,3);
+        // console.log(array4)
+
+
+
+
+       //##Take this array var array = [1,2,3,4,5] and copy it using
+        //Method 1
+        // var copyarr = [1,2,3,4,5];
+        // var arr2 = []
+        // var arr2 = copyarr.slice();
+        // console.log(arr2);
+  
+        
+        //Method 2
+        // array value move to 2nd array
+        // var array = [1,2,3,4,5,6];
+        // var array2 = [];
+
+        // for(var i =0; i <array.length; ++i){
+        //     array2[i] = array[i];
+        // }
+        // console.log(array2);
+
+
+
+
+        //##Empty this array var array = [1,2,3,4,5];
+        //Method 1
+        // var array = [1,2,3,4,5];
+        // console.log(array)
+        // array= [];
+        // console.log(array)
+        
+        //Method 2
+        // i want to 1st array empty and 1st array value stor in 2nd array
+        // var array1 = [1,2,3,4,5];
+        // var array2 = array1;
+        // array1 = [];
+        // console.log(array1)
+        // console.log(array2)
+
+        //Method 3
+        // var array3 = [1,2,3,4,5];
+        // array3.length = 0;
+        // console.log(array3);
+
+        //Method 4
+        // var array4 = [1,2,3,4,5];
+        // console.log(array4);
+        // array4.splice(0,array4.length);
+        // console.log(array4);
+
+
+        //##What type is an Array set to?
+        // var array = [1,2,3,4,5];
+        // console.log(typeof(array));// object
+
+        // check of array
+        //Method 1
+        // var check = [1,2,3,4,5];
+        // var a = Array.isArray(check);
+        // var b = Array.isArray({foo:1});
+        // console.log(a);
+        // console.log(b);
+
+        //Method 2
+        // function checkisarray(arr){
+        //     if(Object.prototype.toString.call(arr) === '[object Array]'){
+        //         console.log('array it is');
+        //     }else{
+        //         console.log('array it is not')
+        //     }
+        // }
+        // var array1 = [{"test array":"test"}];
+        // checkisarray(array1);
+
+
+        //Method 3
+        // var array = [1, 2, 3, 4, 5];
+        // function checkIfarray(obj){
+        //     if(typeof obj === 'string'){
+        //         console.log("array it is not");
+        //     }else{
+        //         console.log("array it is");
+        //     }
+        // }
+        // checkIfarray(array);
+
+
+
+        //##Add an item to the end of an array.
+        //Method 1
+        // var array = [1,2,3,4];
+        // array.push(5)
+        
+        //Method 2
+        // array[array.length] = 6;
+        // console.log(array);
+
+
+
+
+        //##Find the index position of d in this array var arr= ['a','b','c','d'];
+        // var arr= ['a','b','c','d'];
+        // var findIndex = arr.indexOf(2);
+        // console.log(findIndex);
+
+
+
+        //##Write a function to check if samadhan exists in your array
+        // var names = ["sam","deep","yog","pam"];
+        // function checklistname(list){
+        //   if(names.indexOf(list) === -1){
+        //     console.log("This name is not avilable in the list");
+        //   }else{
+        //     console.log("This name is avilable in the list");
+        //   }
+        // }
+        // checklistname("sam");
+
+
+
+        //##Using reduce add all these numbers var numbers = [1, 2, 3, 4, 5, 6];
+
+        // var numbers = [1, 2, 3, 4, 5, 6];
+        // var total = numbers.reduce((a,b)=> a+b);
+        // console.log(total);
+
+
+        //##Flatten this array to one single array using reduce Var array = [[0, 1], [2, 3], [4, 5]];
+        // var array = [[0, 1], [2, 3], [4, 5]];
+        // //console.log(array)
+        // var singlearr = array.reduce((a,b)=>{
+        //   return a.concat(b);
+        // });
+        // //var sum = singlearr.reduce((e,f)=> e+f)
+        // console.log(singlearr);
+
+
+
+
+        var animals = [
+            { name: "Jason", species:"rabbit"},
+            { name: "Jessica", species:"dog"},
+            { name: "Jacky", species:"owl"},
+            { name: "Luke", species:"fish"},
+            { name: "Junior", species:"rat"},
+            { name: "Thomas", species:"cat"}
+        ]
+
+        var dog = animals.filter(function(animals){
+          return animals.species === "dog";
+        });
+        console.log(dog);
+
+        var spec = animals.map(function(animal){
+          return animal.species
+        });
+        console.log(spec)
+
+
+
+
+        //1) Declare and Initialize Arrays
+
+        // var array = Array(10).fill('');
+        // console.log(array);
+
+        // var matrix = Array(15).fill(0).map(()=> Array(10).fill(0));
+        // console.log(matrix);
+
+
+        //Find out the sum, minimum and maximum value
+
+        // const array  = [5,4,7,8,9,2];
+        // const sum = array.reduce((a,b)=> a+b);
+        // console.log(sum);
+
+        // const maxnum = array.reduce((a,b)=> a>b ? a:b);
+        // console.log(maxnum)
+
+        // const mininum = array.reduce((a,b)=> a<b ? a:b);
+        // console.log(mininum);
+
+        // const secounlargenum = array.sort((a,b)=> a-b)[1];
+        // console.log(secounlargenum);
+
+
+    </script>
+    
+</body>
+</html>
